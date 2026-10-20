@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kevin Angelo D. De Dios — Portfolio</title>
+  <meta name="description" content="Portfolio of an Information Technology graduate and technical support professional." />
+  <meta name="theme-color" content="#000000" />
+  <meta property="og:title" content="Kevin Angelo D. De Dios — Portfolio" />
+  <meta property="og:description" content="IT graduate, technical support professional, aspiring developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="glow" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a href="#home" class="logo" id="logo">KD</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    <nav id="menu">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#works">Works</a>
+      <a href="#contact" class="pill">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="hero-text reveal">
+        <p class="eyebrow" id="h-role"></p>
+        <h1 id="h-name"></h1>
+        <p class="lead" id="h-tag"></p>
+        <div class="cta">
+          <a href="#works" class="btn solid">View my works</a>
+          <a href="#contact" class="btn ghost">Contact me</a>
+          <a href="" class="btn ghost" id="h-resume" target="_blank" rel="noopener">Resume</a>
+        </div>
+        <p class="loc" id="h-loc"></p>
+      </div>
+      <div class="hero-photo reveal">
+        <div class="frame">
+          <img id="h-photo" alt="Portrait" />
+          <div class="initials" id="h-initials"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="reveal">
+        <p class="eyebrow">01 — About</p>
+        <h2>A bit about me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="reveal" id="about-text"></div>
+        <div class="reveal">
+          <div class="stats" id="stats"></div>
+          <h3 class="mini">Skills &amp; tools</h3>
+          <div class="chips" id="skills"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="reveal">
+        <p class="eyebrow">02 — Experience</p>
+        <h2>Where I've worked</h2>
+      </div>
+      <div class="timeline" id="exp"></div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="reveal">
+        <p class="eyebrow">03 — Education</p>
+        <h2>Where I studied</h2>
+      </div>
+      <div class="timeline" id="edu"></div>
+    </section>
+
+    <!-- WORKS -->
+    <section id="works" class="section">
+      <div class="reveal">
+        <p class="eyebrow">04 — Works</p>
+        <h2>Selected projects</h2>
+      </div>
+      <div class="filters reveal" id="filters"></div>
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="reveal">
+        <p class="eyebrow">05 — Contact</p>
+        <h2>Let's work together</h2>
+        <p class="lead">Open to remote opportunities. Send me a message and I'll reply as soon as I can.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="reveal">
+          <a class="mail" id="c-mail" href=""></a>
+          <h3 class="mini">Find me online</h3>
+          <div class="socials" id="socials"></div>
+        </div>
+        <form class="reveal" id="form" novalidate>
+          <label>Your name<input name="name" required /></label>
+          <label>Your email<input name="email" type="email" required /></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" />
+          <button class="btn solid" type="submit">Send message</button>
+          <p class="status" id="status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span id="f-copy"></span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
